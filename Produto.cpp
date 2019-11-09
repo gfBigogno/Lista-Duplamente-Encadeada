@@ -21,6 +21,13 @@ Produto::Produto(const Produto& orig) {
     this->estoque = orig.GetEstoque();
 }
 
+void Produto::copiar(Produto p){
+     this->id = p.GetId();
+    this->preco = p.GetPreco();
+    this->custo = p.GetCusto();
+    this->estoque = p.GetEstoque();
+}
+
 Produto::~Produto() {
 }
 

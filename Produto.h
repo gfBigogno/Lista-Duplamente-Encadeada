@@ -7,6 +7,7 @@ public:
     Produto(int id, double preco, double custo, int estoque);
     Produto(const Produto& orig);
     virtual ~Produto();
+    void copiar(Produto p);
 
     void preencher();
     void imprimir();
